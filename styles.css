@@ -905,22 +905,28 @@ section {
 }
 
 /* Contact Section */
-.contact-content {
-    max-width: 700px;
-    margin: 0 auto;
+.contact {
     text-align: center;
 }
 
-.contact-content p {
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.contact-methods {
+.contact p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-item {
