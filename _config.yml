@@ -1,0 +1,28 @@
+# Site Settings
+title: Jamil Hawwash | Developer Portfolio
+email: your.email@example.com
+description: >-
+  Software Developer Portfolio - Showcasing projects, skills, and experience
+  in modern web development and software engineering.
+baseurl: ""
+url: "https://jhawwash.github.io"
+
+# Social Profiles
+github_username: jhawwash
+linkedin_username: yourprofile
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .DS_Store
