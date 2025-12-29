@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jamil Hawwash - Portfolio">
+    <title>Jamil Hawwash | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">JH</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+<!--                <li><a href="#interests">Interests</a></li>-->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Hi, I'm <span class="highlight" data-text="Jamil Hawwash">Jamil Hawwash</span></h1>
+                <p class="tagline fade-in-delay">AI Engineer & Data Scientist | Machine Learning | Data Analysis</p>
+                <div class="location-info fade-in-delay">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Abu Dhabi, UAE</span>
+                    <span class="separator">|</span>
+                    <i class="fas fa-clock"></i>
+                    <span id="current-time">Loading time...</span>
+                </div>
+                <div class="cta-buttons fade-in-delay-2">
+                    <a href="Resume%20-%20Jamil%20Hawwash.pdf" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Get Resume</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links fade-in-delay-3">
+                    <a href="https://github.com/JHawwash" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/jamil-hawwash" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:jamilhawwash9@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm an AI Engineer and Data Scientist specializing in multilingual voice agents, backend development, and applied machine learning. I work across Python, FastAPI, AWS, and modern AI frameworks to build systems that are fast, scalable, and production-ready.</p>
+                    <p>My experience covers AI model pipelines, RAG systems, speech technologies, microservices, data automation, and large-scale analytics. I enjoy solving complex engineering challenges and creating solutions that make real-world operations smarter and more efficient.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <i class="fas fa-brain"></i>
+                            <h3>AI Engineering</h3>
+                            <p>STT, TTS, RAG, and ML Pipelines</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Systems</h3>
+                            <p>FastAPI Microservices & AWS</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Data Intelligence</h3>
+                            <p>Forecasting, NLP & Automation</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Data Analysis & Reporting</h3>
+                            <p>Analytics, Insights & Visualization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="professional">Professional</button>
+                <button class="filter-btn" data-filter="personal">Personal</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="personal">
+                    <div class="project-type-badge personal-badge">Personal</div>
+                    <div class="project-header">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Real-Time Driver Drowsiness Detection</h3>
+                    <p>Developed a CNN model using TensorFlow to detect drowsiness from facial cues. Trained on 2,000 volunteer images achieving 95%+ accuracy. Deployed on Raspberry Pi with camera and buzzer for real-time detection and alerts.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="personal">
+                    <div class="project-type-badge personal-badge">Personal</div>
+                    <div class="project-header">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>CNN-based COVID-19 X-ray Classifier</h3>
+                    <p>Trained a CNN from scratch to classify chest X-ray images as COVID-19 or normal. Applied data augmentation and preprocessing for model robustness, achieving 98% accuracy in classifying COVID-19 cases.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Image Processing</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="personal">
+                    <div class="project-type-badge personal-badge">Personal</div>
+                    <div class="project-header">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>AI Medical Training Chatbot - 1st Place Hackathon</h3>
+                    <p>Developed an AI-powered chatbot using OpenAI API to simulate patient-doctor interactions for medical students practicing OSCE exam scenarios. Won 1st place at Innov8 Bahrain out of 20 teams.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Chatbot</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="professional">
+                    <div class="project-type-badge professional-badge">Professional</div>
+                    <div class="project-header">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>Multilingual Voice Agent Platform</h3>
+                    <p>Engineered a low-latency voice agent capable of natural, real-time conversations in English and Arabic dialects (Jordanian, Saudi, Iraqi). Designed the STT → NLP → TTS pipeline using Pipecat and optimized streaming to ensure smooth, responsive dialogue for enterprise deployments.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Pipecat</span>
+                        <span class="tech-tag">Speech AI</span>
+                        <span class="tech-tag">STT/TTS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="professional">
+                    <div class="project-type-badge professional-badge">Professional</div>
+                    <div class="project-header">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>RAG-based Knowledge System</h3>
+                    <p>Built an enterprise-grade RAG system for multilingual document retrieval and question answering. Implemented embedding models, vector storage with Qdrant, and Haystack pipelines, optimizing retrieval accuracy and latency for production workloads.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Haystack</span>
+                        <span class="tech-tag">Qdrant</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Vector DB</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="professional">
+                    <div class="project-type-badge professional-badge">Professional</div>
+                    <div class="project-header">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Appointment Scheduling & Automation Engine</h3>
+                    <p>Built a scheduling and appointment-management backend integrated with voice agents and automated notification flows. Developed FastAPI microservices, AWS-backed storage and email pipelines, and real-time availability logic to enable seamless booking, rescheduling, and customer engagement without manual intervention.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">AWS S3/SES</span>
+                        <span class="tech-tag">SQLAlchemy</span>
+                        <span class="tech-tag">Postgres</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="professional">
+                    <div class="project-type-badge professional-badge">Professional</div>
+                    <div class="project-header">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Automated Chatbot Analytics & NLP Insights Pipeline</h3>
+                    <p>Developed an analytics pipeline to interpret large volumes of user–bot interactions. Built Python-based NLP tools to classify queries, detect failure points, and extract behavioral patterns. Automated weekly reporting and insights generation, reducing manual analysis time and enabling data-driven CX improvements.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Analytics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="https://github.com/JHawwash?tab=repositories" target="_blank" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+
+                <!-- AI Engineering -->
+                <div class="skill-category">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-Learn</span>
+                        <span>OpenCV</span>
+                        <span>Haystack</span>
+                        <span>Qdrant</span>
+                        <span>Pipecat</span>
+                        <span>RAG Systems</span>
+                        <span>STT/TTS Pipelines</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Cloud -->
+                <div class="skill-category">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend & Cloud</h3>
+                    <div class="skill-tags">
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>SQLAlchemy</span>
+                        <span>RabbitMQ</span>
+                        <span>AWS S3</span>
+                        <span>AWS SES</span>
+                        <span>REST APIs</span>
+                        <span>Microservices</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>R</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="skill-category">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Engineering & Analytics</h3>
+                    <div class="skill-tags">
+                        <span>Power BI</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>PySpark</span>
+                        <span>Seaborn</span>
+                        <span>Matplotlib</span>
+                        <span>ETL Pipelines</span>
+                        <span>Forecasting Models</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Automation -->
+                <div class="skill-category">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Automation</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>n8n</span>
+                        <span>Power Automate</span>
+                        <span>Selenium</span>
+                        <span>CI/CD</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- Egnite -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI Engineer</h3>
+                        <span class="company">Egnite</span>
+                        <span class="duration">Jun 2025 – Present</span>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Engineered end-to-end multilingual AI voice agents using Pipecat, enabling real-time conversational interactions in English and Arabic dialects (Jordanian, Saudi, Iraqi).</li>
+                        <li>Designed, containerized, and deployed low-latency STT → NLP → TTS pipelines using Docker on RunPod and AWS, including real-time speech recognition and custom-trained XTTS voices for natural Arabic speech synthesis.</li>
+                        <li>Built multilingual RAG systems using Haystack and Qdrant, implementing embedding pipelines and vector search to support accurate contextual retrieval for voice-based interactions.</li>
+                        <li>Designed and implemented scalable FastAPI microservices for scheduling, notifications, file handling, and analytics using SQLAlchemy and AWS services (S3, SES).</li>
+                    </ul>
+                </div>
+
+                <!-- Miral Destinations -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Data Science Intern</h3>
+                        <span class="company">Miral Destinations</span>
+                        <span class="duration">Feb 2025 – Jun 2025</span>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Developed NLP tools to classify chatbot queries, detect failure points, and extract behavioral insights from large user–bot interaction datasets.</li>
+                        <li>Automated weekly reporting and analytics workflows using Python, Power BI, and Excel, reducing manual reporting time by 80%.</li>
+                        <li>Performed revenue and performance analysis across tenants, uncovering trends that aided leadership in strategic decision-making.</li>
+                        <li>Collaborated with engineering and CX teams to improve chatbot performance and reduce bot-to-agent handoff rates.</li>
+                    </ul>
+                </div>
+
+                <!-- Jaramed -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Data Analyst (Part-Time)</h3>
+                        <span class="company">Jaramed</span>
+                        <span class="duration">Aug 2023 – May 2024</span>
+                    </div>
+                    <ul class="experience-details">
+                        <li>Built Python + SQL ETL pipelines to clean, transform, and structure pharmaceutical sales data across multiple countries.</li>
+                        <li>Developed forecasting models (XGBoost, ARIMA, LSTM) to analyze demand patterns and improve distribution strategies.</li>
+                        <li>Created analytics dashboards and visualizations to highlight trends and support operational decision-making.</li>
+                        <li>Improved data quality and pipeline reliability through automation and ongoing validation workflows.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    <section id="interests" class="interests">-->
+<!--        <div class="container">-->
+<!--            <h2 class="section-title">Interests</h2>-->
+<!--            <div class="interests-content">-->
+<!--                <div class="interest-category">-->
+<!--                    <div class="interest-icon">-->
+<!--                        <i class="fas fa-rocket"></i>-->
+<!--                    </div>-->
+<!--                    <h3>Tech Interests</h3>-->
+<!--                    <ul class="interest-list">-->
+<!--                        <li>Large Language Models & Generative AI</li>-->
+<!--                        <li>Real-time Voice AI Systems</li>-->
+<!--                        <li>MLOps & Model Deployment</li>-->
+<!--                        <li>Distributed Systems & Cloud Architecture</li>-->
+<!--                        <li>Computer Vision & Edge AI</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+
+<!--                <div class="interest-category">-->
+<!--                    <div class="interest-icon">-->
+<!--                        <i class="fas fa-heart"></i>-->
+<!--                    </div>-->
+<!--                    <h3>Personal Hobbies</h3>-->
+<!--                    <ul class="interest-list">-->
+<!--                        <li>Building side projects & open source contributions</li>-->
+<!--                        <li>Reading tech blogs and research papers</li>-->
+<!--                        <li>Photography & creative coding</li>-->
+<!--                        <li>Fitness & outdoor activities</li>-->
+<!--                        <li>Gaming & exploring new technologies</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>
+                I'm always open to discussing new projects, AI solutions, or opportunities to collaborate.
+                Feel free to reach out!
+            </p>
+
+            <div class="contact-list">
+                <a href="mailto:jamilhawwash9@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>jamilhawwash9@gmail.com</span>
+                </a>
+
+                <a href="https://github.com/JHawwash" class="contact-item" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/JHawwash</span>
+                </a>
+
+                <a href="https://linkedin.com/in/jamil-hawwash" class="contact-item" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/jamil-hawwash</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jamil Hawwash. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
